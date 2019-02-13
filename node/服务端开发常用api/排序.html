@@ -1,0 +1,45 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+    let a = {
+      n: 100
+    }
+    let a1 = {
+      n: 10
+    }
+    let a2 = {
+      n: 12
+    }
+
+    let qq = [a, a1, a2]
+    qq.sort()
+    qq.sort((a, b) => {
+      if (a < b) {
+        return 1
+      }
+
+      if (a > b) {
+        return -1
+      }
+
+      return -(a - b)
+
+      return 0
+      // return a.n < b.n
+    })
+    console.log(qq)
+    // var months = ['March', 'Jan', 'Feb', 'Dec'];
+    // months.sort();
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
