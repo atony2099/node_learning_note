@@ -1,0 +1,26 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <iframe name="yinhang" src="https://www.baidu.com"></iframe>
+
+  <script>
+    // JS
+    // 由于没有同源策略的限制，钓鱼网站可以直接拿到别的网站的Dom
+    const iframe = window.frames['yinhang']
+    const node = iframe.document.getElementById('result_logo')
+
+    console.log(node, "====")
+  </script>
+
+
+</body>
+
+</html>

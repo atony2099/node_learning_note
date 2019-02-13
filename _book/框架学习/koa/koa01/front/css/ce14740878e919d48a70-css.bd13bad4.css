@@ -1,0 +1,10 @@
+.test-list {
+  color: #000;
+}
+.test-list .title {
+  margin: 0.3rem 0.29rem 0.8rem;
+  margin-top: 1rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+

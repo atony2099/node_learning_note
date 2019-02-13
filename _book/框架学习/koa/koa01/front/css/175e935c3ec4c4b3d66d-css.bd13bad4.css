@@ -1,0 +1,336 @@
+.count-down {
+  color: #464553;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.count-down div {
+  width: 0.1rem;
+  height: 0.34rem;
+  line-height: 0.34rem;
+  font-size: 0.2rem;
+}
+.count-down p {
+  font-size: 0.24rem;
+  line-height: 0.34rem;
+  height: 0.34rem;
+  background: #464553;
+  color: #fff;
+  border-radius: 0.06rem;
+  font-weight: bold;
+}
+.count-down p:first-child {
+  padding: 0 0.03rem;
+}
+.count-down p:not(:first-child) {
+  width: 0.34rem;
+}
+
+.cell {
+  display: flex;
+  margin: 0.3rem;
+}
+.cell .gift-image {
+  width: 2.07rem;
+  height: 2.07rem;
+  flex-shrink: 0;
+}
+.cell .gift-image .image {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.2rem;
+}
+.cell .detail {
+  flex-grow: 1;
+  margin: 0 0 0 0.29rem;
+}
+.cell .detail .detail-title {
+  font-size: 0.36rem;
+  font-weight: bolder;
+}
+.cell .detail .detail-desc {
+  color: #777;
+  margin: 0.08rem 0 0.37rem 0;
+  font-size: 0.26rem;
+}
+.cell .detail .bottom-container {
+  height: 0.52rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-size: 0.22rem;
+  line-height: 0.26rem;
+}
+.cell .detail .bottom-container .activity-desc {
+  color: #777;
+  margin-right: 0.11rem;
+  font-size: 0.24rem;
+}
+.cell .detail .bottom-container .push-button {
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: #f00;
+  padding: 0.14rem 0.16rem;
+  border-radius: 0.3rem;
+  font-size: 0.24rem;
+  color: #fff;
+}
+
+.around-list {
+  color: #000;
+}
+.around-list .title {
+  margin: 0.3rem 0.29rem 0.8rem;
+  margin-top: 1rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.cellV2 {
+  display: flex;
+  position: relative;
+  height: 100%;
+  margin-left: 0.3rem;
+  border-radius: 0.16rem;
+  padding-top: 0.2rem;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  position: relative;
+  box-shadow: 0 0.1rem 0.2rem rgba(197,197,197,0.4);
+}
+.cellV2::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  transform-origin: 0 0;
+  border-radius: 0.32rem;
+  border: 1px solid #f1f1f1;
+  transform: scale(0.5);
+}
+.cellV2 .image-wrap {
+  height: 2.1rem;
+  width: 2.1rem;
+  flex: none;
+}
+.cellV2 .image-wrap img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.12rem;
+}
+.cellV2 .detail-wrap {
+  overflow: hidden;
+  margin-left: 0.29rem;
+}
+.cellV2 .detail-wrap .detail-title {
+  font-size: 0.33rem;
+  line-height: 0.33rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.23rem;
+  font-weight: bolder;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.cellV2 .detail-wrap .detail-desc {
+  font-size: 0.24rem;
+  line-height: 0.28rem;
+  color: #777;
+  margin: 0.08rem 0 0.37rem 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 0.28rem; /* fallback */
+  max-height: 1.4rem; /* fallback */
+  -webkit-line-clamp: 5; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+.cellV2 .bottom-wrap {
+  position: relative;
+  position: absolute;
+  height: 0.8rem;
+  bottom: 0;
+  left: 0.2rem;
+  right: 0.2rem;
+  display: flex;
+  align-items: center;
+  font-size: 0.22rem;
+  line-height: 0.26rem;
+}
+.cellV2 .bottom-wrap::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  transform-origin: 0 0;
+  border-radius: 0;
+  border-top: 1px solid #f1f1f1;
+  transform: scale(0.5);
+}
+.cellV2 .bottom-wrap .activity-desc {
+  color: #777;
+  margin-right: 0.11rem;
+  font-size: 0.24rem;
+}
+.cellV2 .bottom-wrap .push-button {
+  position: absolute;
+  right: 0;
+  text-align: center;
+  background-color: #f00;
+  border-radius: 0.3rem;
+  font-size: 0.24rem;
+  color: #fff;
+  height: 0.48rem;
+  width: 1.3rem;
+  line-height: 0.48rem;
+}
+
+.message-cell {
+  position: relative;
+  font-weight: bold;
+  padding: 0.4rem 0.3rem 0.4rem 0.3rem;
+  position: relative;
+}
+.message-cell::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  transform-origin: 0 0;
+  border-radius: 0;
+  border-bottom: 1px solid #f1f1f1;
+  transform: scale(0.5);
+}
+.message-cell .link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.message-cell .title-wrap {
+  font-size: 0.32rem;
+  line-height: 0.48rem;
+  color: #000;
+  margin-bottom: 0.27rem;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.message-cell .title-wrap .title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.message-cell .title-wrap .push-button {
+  flex: none;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  background-color: #f00;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0.1rem;
+  border-radius: 0.3rem;
+  font-size: 0.24rem;
+  color: #fff;
+  font-size: 0.24rem;
+  line-height: 0.48rem;
+  width: 1.1rem;
+}
+.message-cell .title-wrap .push-button img {
+  width: 0.24rem;
+  height: 0.24rem;
+  vertical-align: -0.06rem;
+}
+.message-cell .desc_wrap {
+  font-size: 0.26rem;
+  color: #777;
+  margin-bottom: 0.3rem;
+  display: flex;
+  justify-content: space-between;
+}
+.message-cell .desc_wrap .desc_image {
+  margin-left: 0.8rem;
+  flex: none;
+  width: 1.42rem;
+  height: 1.42rem;
+}
+.message-cell .desc_wrap .desc_image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.14rem;
+  overflow: hidden;
+}
+.message-cell .time-desc {
+  font-size: 0.24rem;
+  color: rgba(136,136,136,0.6);
+}
+
+.message-wrap .loop-wrap .swiper-container {
+  height: 100%;
+  width: 100%;
+  padding-bottom: 0.3rem;
+  padding-top: 0.1rem;
+}
+.message-wrap .loop-wrap .swiper-container .swiper-slide {
+  width: 6.6rem;
+  height: 3.4rem;
+  padding-bottom: 1px;
+}
+.message-wrap .list {
+  padding-top: 0rem;
+}
+.message-wrap > .title {
+  margin: 0 0.3rem 0.3rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  max-width: 750px;
+  margin: 0 auto;
+  font-size: 0.33rem;
+}
+body * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: PingFang-SC-Medium, STHeiti, Microsoft YaHei, Helvetica, Arial, sans-serif;
+}
+body a {
+  text-decoration: none;
+}
+.loading-container {
+  text-align: center;
+  font-size: 0.24rem;
+  color: #777;
+}
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+.clear-fix:after {
+  display: table;
+  content: '';
+  clear: both;
+}
+
